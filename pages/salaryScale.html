@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>FingerPrint</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <link href="../css/chosen.min.css" rel="stylesheet">
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Add custom CSS here -->
+    <link href="../css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top gradient" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">FingerPrint</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse gradient">
+          <ul class="nav navbar-nav side-nav gradient">
+            <li><a href="../attendanceReport.html"><i class="fa fa-file-text-o"></i>Attendance Reports</a></li>
+            <li><a href="employee.html"><i class="fa fa-users"></i>Employees</a></li>
+            <li><a href="departments.html"><i class="fa fa-briefcase"></i>Departments</a></li>
+            <li><a href="company.html"><i class="fa fa-building-o"></i>Companies</a></li>
+            <li><a href="projects.html"><i class="fa fa-laptop"></i>Projects</a></li>
+            <li><a href="jobs.html"><i class="fa fa-briefcase"></i>Jobs</a></li>
+            <li><a href="titles.html"><i class="fa fa-id-card"></i>Titles</a></li>
+            <li><a href="levels.html"><i class="fa fa-line-chart"></i>Level</a></li>
+            <li><a href="vacations.html"><i class="fa fa-futbol-o"></i>Vacation</a></li>
+            <li><a href="penalties.html"><i class="fa fa-times"></i>Penalties</a></li>
+            <li class="active"><a href="salaryScale.html"><i class="fa fa-usd"></i>Salary Scale</a></li>
+            <li><a href="client.html"><i class="fa fa-handshake-o"></i>Clients</a></li>
+            <li><a href="address.html"><i class="fa fa-map-marker"></i>Address</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right navbar-user">
+
+            <li class="dropdown user-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge">7</span></a></li>
+                <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+
+      <div id="page-wrapper">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <button class="btn btn-default pull-right">Add New Salary</button>
+            <h1>Salaries</h1>
+            <ol class="breadcrumb">
+              <li><a href="../attendanceReport.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+              <li class="active"><i class="fa fa-usd"></i>Salaries</li>
+            </ol>
+          </div>
+
+        </div><!-- /.row -->
+        <div class="row hiddenTable" style="display: none;">
+          <div class="col-md-12 well">
+            <form>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name">Salary Name</label>
+                    <input type="text" placeholder="Name" class="btn-default form-control" id="name">
+                  </div>
+                </div>
+                <div class="col-xs-4 id-form">
+                  <div class="form-group">
+                    <label for="id">ID:</label>
+                    <span class="form-control-static" id="id">1000</span>
+                  </div>
+                </div>
+                </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="department">Department</label>
+                    <select class="my_select_box" data-placeholder="Select Department" id="department">
+                      <option>Accounting</option>
+                      <option>Technical</option>
+                      <option>PR</option>
+
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="title">Title</label>
+                    <select class="my_select_box" data-placeholder="Select Title" id="title">
+                      <option>Team Leader</option>
+                      <option>Team Leader</option>
+                      <option>Team Leader</option>
+
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="level">Level</label>
+                    <select class="my_select_box" data-placeholder="Select Department" id="level">
+                      <option>Senior</option>
+                      <option>Junior</option>
+
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="company">Company</label>
+                    <select class="my_select_box" data-placeholder="Select Company" id="company">
+                      <option>Business Monk</option>
+
+                    </select>
+                  </div>
+                </div>
+                </div>
+              <button class="btn btn-default pull-right btn-lg" style="line-height: 0;margin-right: 16px">Add</button>
+
+            </form>
+          </div>
+        </div>
+
+
+
+          <div class="col-md-12">
+            <div class="table-responsive">
+              <table class="table table-responsive table-bordered table-hover tablesorter">
+                <thead>
+                  <tr>
+                    <th>Salary Name <i class="fa fa-sort"></i></th>
+                    <th>ID <i class="fa fa-sort"></i></th>
+                    <th>Department</th>
+                    <th>Title</th>
+                    <th>Level</th>
+                    <th>Company</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2000LE</td>
+                    <td>1</td>
+                    <td>Accounting</td>
+                    <td>Team Leader</td>
+                    <td>Senior</td>
+                    <td>Business Monk</td>
+                   </tr>
+                  <tr>
+                    <td>2000LE</td>
+                    <td>1</td>
+                    <td>Accounting</td>
+                    <td>Team Leader</td>
+                    <td>Senior</td>
+                    <td>Business Monk</td>
+                  </tr>
+
+
+
+                </tbody>
+              </table>
+            </div>
+        </div><!-- /.row -->
+
+
+
+
+      </div><!-- /#page-wrapper -->
+
+    </div><!-- /#wrapper -->
+
+    <!-- JavaScript -->
+    <script src="../js/jquery-1.10.2.js"></script>
+    <script src="../js/bootstrap.js"></script>
+
+    <!-- Page Specific Plugins -->
+    <script src="../js/tablesorter/jquery.tablesorter.js"></script>
+    <script src="../js/tablesorter/tables.js"></script>
+    <script src="../js/chosen.jquery.min.js"></script>
+  <script>
+    $(".btn").click(function(){
+      $(".hiddenTable").toggle("slow");
+    });
+
+    $(".my_select_box").chosen({
+      disable_search_threshold: 10,
+      no_results_text: "Oops, nothing found!",
+      width: "100%"
+    });
+  </script>
+
+  </body>
+</html>

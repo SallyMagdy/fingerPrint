@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>FingerPrint</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <link href="../css/chosen.min.css" rel="stylesheet">
+
+    <!--date Range-->
+    <link href="../css/daterangepicker/daterangepicker-bs3.css" rel="stylesheet">
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Add custom CSS here -->
+    <link href="../css/style.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top gradient" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">FingerPrint</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse gradient">
+          <ul class="nav navbar-nav side-nav gradient">
+            <li><a href="../attendanceReport.html"><i class="fa fa-file-text-o"></i>Attendance Reports</a></li>
+            <li><a href="employee.html"><i class="fa fa-users"></i>Employees</a></li>
+            <li><a href="departments.html"><i class="fa fa-briefcase"></i>Departments</a></li>
+            <li><a href="company.html"><i class="fa fa-building-o"></i>Companies</a></li>
+            <li><a href="projects.html"><i class="fa fa-laptop"></i>Projects</a></li>
+            <li><a href="jobs.html"><i class="fa fa-briefcase"></i>Jobs</a></li>
+            <li><a href="titles.html"><i class="fa fa-id-card"></i>Titles</a></li>
+            <li><a href="levels.html"><i class="fa fa-line-chart"></i>Level</a></li>
+            <li class="active"><a href="vacations.html"><i class="fa fa-futbol-o"></i>Vacation</a></li>
+            <li><a href="penalties.html"><i class="fa fa-times"></i>Penalties</a></li>
+            <li><a href="salaryScale.html"><i class="fa fa-usd"></i>Salary Scale</a></li>
+            <li><a href="client.html"><i class="fa fa-handshake-o"></i>Clients</a></li>
+            <li><a href="address.html"><i class="fa fa-map-marker"></i>Address</a></li>
+
+
+
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right navbar-user">
+
+            <li class="dropdown user-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge">7</span></a></li>
+                <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+
+      <div id="page-wrapper">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc;">
+              <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+              <span></span> <b class="caret"></b>
+            </div>
+            <h1>Sam Smith</h1>
+            <ol class="breadcrumb">
+              <li><a href="vacations.html"><i class="fa fa-futbol-o"></i>Vacations</a></li>
+              <li class="active"><i class="fa fa-user"></i>Sam Smith</li>
+            </ol>
+          </div>
+
+        </div><!-- /.row -->
+
+        <div class="col-md-8 col-md-offset-2">
+        <table class="table table-bordered employeeData">
+          <tr>
+            <td>Name</td>
+            <td>Sam Smith</td>
+          </tr>
+          <tr>
+            <td>ID</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <td>Job</td>
+            <td>Accountant</td>
+          </tr>
+          <tr>
+            <td>Title</td>
+            <td>Team Leader</td>
+          </tr>
+          <tr>
+            <td>Level</td>
+            <td>Senior</td>
+          </tr>
+          <tr>
+            <td>Salary</td>
+            <td>2000LE</td>
+
+          </tr>
+          <tr>
+            <td>Department</td>
+            <td>Marketing</td>
+          </tr>
+          <tr>
+          <td>Projects</td>
+          <td><ul>
+            <li>She Can</li>
+            <li>She Can</li>
+            <li>She Can</li>
+          </ul></td>
+          </tr>
+          <tr>
+            <td>Vacations</td>
+           <td>21 Days</td>
+          </tr>
+          <tr>
+            <td>Joining Date</td>
+            <td>21/12/2015</td>
+          </tr>
+          <tr>
+            <td>Penalties</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Clients</td>
+            <td>
+              <ul>
+                <li>Yaa Chat</li>
+                <li>Yaa Chat</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        </div>
+
+          <div class="col-md-12">
+            <div class="table-responsive">
+
+              <table class="table table-responsive table-bordered table-hover tablesorter">
+                <caption>November<a data-toggle="collapse" data-target="#november"><i class="fa fa-minus"></i></a></caption>
+                <thead>
+                  <tr>
+
+                    <th>Created On</th>
+                    <th>Start Date<i class="fa fa-sort"></i></th>
+                    <th>End Date<i class="fa fa-sort"></i></th>
+                    <th>Duration<i class="fa fa-sort"></i></th>
+                    <th>Reason</th>
+                    <th>Status</th>
+
+
+                  </tr>
+                </thead>
+                <tbody id="november">
+                  <tr>
+                    <td>1/11/2016</td>
+                    <td>10-12-2016</td>
+                    <td>15-12-2016</td>
+                    <td>5 Days</td>
+                    <td>Travelling</td>
+                    <td><label class="label label-success">Approved</label></td>
+                  </tr>
+                  <tr>
+                    <td>2/11/2016</td>
+                    <td>10-12-2016</td>
+                    <td>15-12-2016</td>
+                    <td>5 Days</td>
+                    <td>Travelling</td>
+                    <td><label class="label label-success">Approved</label></td>
+                  </tr>
+                  <tr>
+                    <td>3/11/2016</td>
+                    <td>10-12-2016</td>
+                    <td>15-12-2016</td>
+                    <td>5 Days</td>
+                    <td>Travelling</td>
+                    <td><label class="label label-success">Approved</label></td>
+                  </tr>
+                  <tr>
+
+
+                </tbody>
+              </table>
+            </div>
+        </div><!-- /.row -->
+
+
+
+        <div class="col-md-12">
+          <div class="table-responsive">
+
+            <table class="table table-responsive table-bordered table-hover tablesorter">
+              <caption>October<a data-toggle="collapse" data-target="#october"><i class="fa fa-minus"></i></a></caption>
+              <thead>
+              <tr>
+
+                <th>Created On</th>
+                <th>Start Date<i class="fa fa-sort"></i></th>
+                <th>End Date<i class="fa fa-sort"></i></th>
+                <th>Duration<i class="fa fa-sort"></i></th>
+                <th>Reason</th>
+                <th>Status</th>
+
+              </tr>
+              </thead>
+              <tbody id="october">
+              <tr>
+                <td>3/11/2016</td>
+                <td>10-12-2016</td>
+                <td>15-12-2016</td>
+                <td>5 Days</td>
+                <td>Travelling</td>
+                <td><label class="label label-success">Approved</label></td>
+              </tr>
+              <tr>
+                <td>3/11/2016</td>
+                <td>10-12-2016</td>
+                <td>15-12-2016</td>
+                <td>5 Days</td>
+                <td>Travelling</td>
+                <td><label class="label label-success">Approved</label></td>
+              </tr>
+              <tr>
+                <td>3/11/2016</td>
+                <td>10-12-2016</td>
+                <td>15-12-2016</td>
+                <td>5 Days</td>
+                <td>Travelling</td>
+                <td><label class="label label-success">Approved</label></td>
+              </tr>
+              <tr>
+
+
+              </tbody>
+            </table>
+          </div>
+        </div><!-- /.row -->
+
+
+      </div><!-- /#page-wrapper -->
+
+    </div><!-- /#wrapper -->
+
+    <!-- JavaScript -->
+    <script src="../js/jquery-1.10.2.js"></script>
+    <script src="../js/bootstrap.js"></script>
+
+    <!-- Page Specific Plugins -->
+    <script src="../js/tablesorter/jquery.tablesorter.js"></script>
+    <script src="../js/tablesorter/tables.js"></script>
+    <script src="../js/chosen.jquery.min.js"></script>
+
+    <!--date Range-->
+    <script src="../js/daterangepicker/moment.min.js"></script>
+    <script src="../js/daterangepicker/daterangepicker.js"></script>
+  <script>
+    $(".btn").click(function(){
+      $(".hiddenTable").toggle("slow");
+    });
+
+    $(".my_select_box").chosen({
+      disable_search_threshold: 10,
+      no_results_text: "Oops, nothing found!",
+      width: "100%"
+    });
+  </script>
+    <script type="text/javascript">
+      /*calender*/
+      $(function() {
+
+        $('input[name="daterange"]').daterangepicker();
+        var start = moment().subtract(29, 'days');
+        var end= moment();
+
+
+        function cb(start, end) {
+          $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        }
+
+
+        $('#reportrange').daterangepicker({
+          startDate: start,
+          endDate: end,
+          ranges: {
+            'Today': [moment()],
+            'Yesterday': [moment().subtract(1, 'days'),moment().subtract(1, 'days')],
+            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+            'This Month': [moment().startOf('month'), moment().endOf('month')],
+            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')],
+            'This year': [moment().startOf('year'), moment()]
+          }
+        }, cb);
+
+
+        cb(start, end);
+
+      });
+    </script>
+
+  </body>
+</html>
